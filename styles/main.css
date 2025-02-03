@@ -1,0 +1,13 @@
+.overline {
+  font: bold 1rem/150% "Roboto Mono";
+  color: var(--content-primary);
+
+  background-color: var(--content-primary); /* Fallback */
+  background: var(--linear-gradient-content);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}

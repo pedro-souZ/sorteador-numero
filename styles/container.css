@@ -1,21 +1,24 @@
 .container {
-  padding: 4.75rem 2.1875rem 9.5625rem 2.1875rem;
-  max-width: 73rem;
-  margin: auto;
+  max-width: 1366px;
+  margin: 0 auto;
 }
-.logo {
-  display: flex;
-  justify-content: center;
-  gap: 0.6875rem;
 
-  width: 10.75rem;
-  height: 2.375rem;
+.wrapper-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  max-width: 172px;
+  height: auto;
+
+  margin-top: 76px;
+
+  & img {
+    height: 38px;
+  }
 
   & span {
-    display: flex;
-    align-items: center;
-
     color: var(--content-primary);
-    font: bold 1.5rem/130% var(--ff-sora);
+    font: 800 24px/130% var(--ff-sora);
   }
 }
