@@ -1,51 +1,37 @@
 main {
-  max-width: 68.625rem;
   margin-top: 5.5625rem;
   padding: 1rem;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 
   & h1 {
     margin-top: 0.75rem;
+    margin-bottom: 1.875rem;
 
-    grid-column: 1;
     font: var(--display-large);
     color: var(--content-primary);
   }
 }
 
+header {
+  grid-column: 1;
+}
+
+/* duvidas */
 .wrapper-questions {
   display: flex;
   flex-direction: column;
 
   gap: 2.25rem;
-  margin-top: 2.375rem;
-}
-
-.sort {
-  margin-top: 3.125rem;
-
-  & span {
-    color: var(--content-brand);
-    font: var(--label-medium);
-  }
-
-  & p {
-    color: var(--content-secondary);
-    font: var(--paragraph-medium);
-    margin-top: 0.75rem;
-  }
 }
 
 .wrapper-question {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .text-question {
-  display: flex;
-  flex-wrap: wrap;
   max-width: 24.125rem;
 
   & h4 {
@@ -60,6 +46,10 @@ main {
 }
 
 .overline {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: inline;
   font: bold 1rem/150% "Roboto Mono";
   color: var(--content-primary);
 
@@ -71,4 +61,22 @@ main {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+.sorteio {
+  margin-top: 3.125rem;
+
+  grid-column: 2;
+  grid-row: 1 / end;
+
+  & span {
+    color: var(--content-brand);
+    font: var(--label-medium);
+  }
+
+  & p {
+    color: var(--content-secondary);
+    font: var(--paragraph-medium);
+    margin-top: 0.75rem;
+  }
 }
