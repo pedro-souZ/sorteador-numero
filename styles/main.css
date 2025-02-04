@@ -1,11 +1,15 @@
 main {
-  max-width: 1098px;
-  margin-top: 89px;
-  padding: 15px;
+  max-width: 68.625rem;
+  margin-top: 5.5625rem;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   & h1 {
-    margin-top: 12px;
+    margin-top: 0.75rem;
 
+    grid-column: 1;
     font: var(--display-large);
     color: var(--content-primary);
   }
@@ -15,19 +19,34 @@ main {
   display: flex;
   flex-direction: column;
 
-  gap: 36px;
-  margin-top: 38px;
+  gap: 2.25rem;
+  margin-top: 2.375rem;
+}
+
+.sort {
+  margin-top: 3.125rem;
+
+  & span {
+    color: var(--content-brand);
+    font: var(--label-medium);
+  }
+
+  & p {
+    color: var(--content-secondary);
+    font: var(--paragraph-medium);
+    margin-top: 0.75rem;
+  }
 }
 
 .wrapper-question {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .text-question {
   display: flex;
   flex-wrap: wrap;
-  max-width: 386px;
+  max-width: 24.125rem;
 
   & h4 {
     color: var(--content-brand);

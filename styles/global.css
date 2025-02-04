@@ -46,17 +46,17 @@
 
   /* ff-sora */
   --ff-sora: "Sora", sans-serif;
-  --display-large: 800 72px/150% var(--ff-sora);
-  --display-medium: 800 40px/130% var(--ff-sora);
-  --display-small: 700 32px/130% var(--ff-sora);
+  --display-large: 800 4.5rem/150% var(--ff-sora);
+  --display-medium: 800 2.5rem/130% var(--ff-sora);
+  --display-small: 700 2.25rem/130% var(--ff-sora);
 
   /* ff-roboto-flex */
   --ff-robflex: "Roboto Flex", serif;
-  --paragraph-large: 500 16px/150% var(--ff-robflex);
-  --paragraph-medium: 500 14px/150% var(--ff-robflex);
-  --paragraph-small: 500 12px/150% var(--ff-robflex);
-  --label-medium: 700 20px/150% var(--ff-robflex);
-  --label-small: 700 16px/150% var(--ff-robflex);
+  --paragraph-large: 500 1rem/150% var(--ff-robflex);
+  --paragraph-medium: 500 0.875rem/150% var(--ff-robflex);
+  --paragraph-small: 500 0.75rem/150% var(--ff-robflex);
+  --label-medium: 700 1.25rem/150% var(--ff-robflex);
+  --label-small: 700 1rem/150% var(--ff-robflex);
 }
 body {
   height: 100vh;

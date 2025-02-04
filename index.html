@@ -23,7 +23,7 @@
         <span class="overline">ONLINE - GRATUITO</span>
         <h1>SORTEADOR <br />DE NÚMEROS</h1>
 
-        <section>
+        <section class="quest">
           <div class="wrapper-questions">
             <div class="wrapper-question">
               <a href="#"><img src="assets/questions.svg" /></a>
@@ -48,6 +48,54 @@
               </div>
         </section>
 
+        <section class="sort">
+          <span>QUERO SORTEAR:</span>
+          <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+
+          <form>
+            <div class="container-numbers">
+              <div class="container-number">
+                <label class="title" for="number-options">NÚMEROS</label>
+                <div class="input-group">
+                    <div class="input-container">
+                       <input type="number" value="2" id="number-options">
+                    </div>
+                  </div>
+              </div>
+
+
+              <div class="container-number">
+                <label class="title" for="start-number">DE</label>
+                <div class="input-group">
+                    <div class="input-container">
+                       <input type="number" value="1" id="start-number">
+                    </div>
+                  </div>
+              </div>
+
+
+              <div class="container-number">
+                <label class="title" for="end-number">DE</label>
+                <div class="input-group">
+                    <div class="input-container">
+                       <input type="number" value="100" id="end-number">
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+
+
+            <!-- botao personalizado -->
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+              <span class="no-repeat">Não repetir número</span>
+          </label>
+             
+            <button class="btn" type="submit">SORTEAR</button>
+          </form>
+        </section>
 
       </main>
     </div>

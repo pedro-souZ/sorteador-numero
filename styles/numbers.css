@@ -1,0 +1,146 @@
+.container-numbers {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.container-number {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  width: 100%;
+  margin-top: 0.625rem;
+}
+
+.title {
+  color: var(--content-primary);
+  font: var(--label-medium);
+  margin-top: 2rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.9375rem;
+}
+
+.input-container {
+  background-color: var(--background-secondary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 5.625rem;
+  height: 5.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container:last-child {
+  width: 7.5rem; /* Container mais largo para o número 100 */
+}
+
+input[type="number"] {
+  width: 100%; /*se não tiver altura e largura vai ter overflow*/
+  height: 100%;
+
+  background: transparent;
+  color: var(--content-primary);
+
+  font: var(--display-small);
+  text-align: center;
+  border: none;
+}
+
+/* Remove as setas do input number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  /*remove setas no mozilla*/
+  -moz-appearance: textfield;
+}
+
+/* Remove o outline ao focar */
+input[type="number"]:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: var(--background-tertiary);
+  color: var(--content-primary);
+  font: var(--label-medium);
+
+  border-radius: 0.5rem;
+  border: transparent;
+
+  width: 30.125rem;
+
+  padding: 1rem;
+
+  margin-top: 2.5rem;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.btn::after {
+  content: url(/assets/next.svg);
+  position: absolute;
+  top: 1.125rem;
+  margin-left: 0.3125rem;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.3125rem;
+
+  cursor: pointer;
+
+  & span {
+    color: var(--content-primary);
+    font: var(--paragraph-large);
+  }
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+
+  width: 1.875rem;
+  height: 1.25rem;
+
+  background: var(--linear-gradient-background);
+  border-radius: 50px;
+
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+
+  width: 0.875rem;
+  height: 0.875rem;
+
+  background: var(--content-primary);
+  border-radius: 50%;
+
+  top: 50%;
+  left: 0.25rem;
+
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+input:checked + .slider::before {
+  background: rgb(168, 238, 87);
+  left: 0.75rem;
+}
