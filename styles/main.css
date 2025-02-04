@@ -1,3 +1,45 @@
+main {
+  max-width: 1098px;
+  margin-top: 89px;
+  padding: 15px;
+
+  & h1 {
+    margin-top: 12px;
+
+    font: var(--display-large);
+    color: var(--content-primary);
+  }
+}
+
+.wrapper-questions {
+  display: flex;
+  flex-direction: column;
+
+  gap: 36px;
+  margin-top: 38px;
+}
+
+.wrapper-question {
+  display: flex;
+  gap: 12px;
+}
+
+.text-question {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 386px;
+
+  & h4 {
+    color: var(--content-brand);
+    font: var(--paragraph-medium);
+  }
+
+  & p {
+    color: var(--content-secondary);
+    font: var(--paragraph-small);
+  }
+}
+
 .overline {
   font: bold 1rem/150% "Roboto Mono";
   color: var(--content-primary);
